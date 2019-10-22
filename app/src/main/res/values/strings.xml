@@ -3,5 +3,6 @@
     <string name="imageName">Имя картинки</string>
     <string name="buttonBack">Назад</string>
     <string name="buttonForward">Вперед</string>
+    <string name="contentDescription">Описание картинки</string>
 
 </resources>
