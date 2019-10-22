@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">122_EndlessActivities</string>
+    <string name="imageName">Имя картинки</string>
+    <string name="buttonBack">Назад</string>
+    <string name="buttonForward">Вперед</string>
+
+</resources>
