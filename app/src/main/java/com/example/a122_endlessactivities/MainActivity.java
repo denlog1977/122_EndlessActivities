@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         final TextView textViewImageName = (TextView) findViewById(R.id.textViewImageName);
-        String imageName = "";
+        final String imageName = "";
 
         Button buttonBack = (Button) findViewById(R.id.buttonBack);
         buttonBack.setOnClickListener(new View.OnClickListener() {
@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         Button buttonForward = (Button) findViewById(R.id.buttonForward);
-        buttonClear.setOnClickListener(new View.OnClickListener() {
+        buttonForward.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 textViewImageName.setText("Имя картинки " + imageName);
