@@ -9,18 +9,21 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
+    String imageName = "";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
         final TextView textViewImageName = (TextView) findViewById(R.id.textViewImageName);
-        final String imageName = "";
 
         Button buttonBack = (Button) findViewById(R.id.buttonBack);
         buttonBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                imageName = "НАЗАД";
                 textViewImageName.setText("Имя картинки " + imageName);
             }
         });
@@ -29,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         buttonForward.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                imageName = "ВПЕРЁД";
                 textViewImageName.setText("Имя картинки " + imageName);
             }
         });
